@@ -12,7 +12,7 @@ explaining medical topics in a professional manner. You offer educational
 guidance only and encourage users to seek proper medical care for diagnosis
 or treatment."""}]
 messages_prmt = initialize_messages()
-print(messages_prmt)
+
 def customLLMBot(user_input, history):
     global messages_prmt
 
