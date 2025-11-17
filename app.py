@@ -27,7 +27,7 @@ def customLLMBot(user_input, history):
     messages_prmt.append({"role": "assistant", "content": LLM_reply})
 
     return LLM_reply
-    iface = gradio.ChatInterface(customLLMBot,
+iface = gradio.ChatInterface(customLLMBot,
                      chatbot=gradio.Chatbot(height=300),
                      textbox=gradio.Textbox(placeholder="Ask me a question related to medical"),
                      title="doctor ChatBot",
@@ -35,4 +35,4 @@ def customLLMBot(user_input, history):
                      theme="soft",
                      examples=["hi doctor","What is an OPD session ", "how to get a medical appointment"]
                      )
-    iface.launch(share=True)
+iface.launch(share=True)
